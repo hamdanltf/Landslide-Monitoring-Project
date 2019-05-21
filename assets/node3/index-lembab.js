@@ -62,9 +62,9 @@ async function main() {
         data: {
             labels: FILTERED_DATA.map(data => data.waktu.time),
             datasets: [{
-                label: "Pergeseran Tanah",
+                label: "Kelembaban Tanah",
                 fill: false,
-                borderColor: 'rgb(144, 12, 63)',
+                borderColor: 'rgb(0, 0, 0)',
                 data: FILTERED_DATA.map(data => data.parameter.lembab),
             }]
         },
