@@ -28,9 +28,9 @@ while 1:
         par = sensorRead.decode("utf-8").split()
         print(par)
 
-        if (len(par) == 6):
+        if (len(par) == 7):
             parameter = {
-                'miring_x': par[0], 'miring_y': par[1], 'lembab': par[2], 'getar': par[3], 'jarak': par[4],  'node': par[5]}
+                'miring_x': par[0], 'miring_y': par[1], 'miring_z': par[2],'lembab': par[3], 'getar': par[4], 'jarak': par[5],  'node': par[6]}
 
             data = {'waktu': waktu, 'parameter': parameter}
             result = requests.post(
@@ -41,7 +41,3 @@ while 1:
 
     except IOError:
         print('Error! Something went wrong.')
-
-
-# ReadData('COM3')
-# ReadData('COM5')
