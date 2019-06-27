@@ -47,8 +47,107 @@ async function main() {
             } = snapshot.val()
 
             if (parameter.node == 'Node-01') {
-                bot.sendMessage(562592345, "setan"
-                )
+                if (parameter.jarak >= 3) {
+                    bot.sendMessage(-1001157829381, "Kawasan 1 mengalami pergerakan tanah!"
+                    )
+                }
+
+                if (parameter.lembab >= 50) {
+                    bot.sendMessage(-1001157829381, "Kawasan 1 mengalami saturasi tinggi!"
+                    )
+
+                }
+
+                if (parameter.miring_x,parameter.miring_y >= 5) {
+                    bot.sendMessage(-1001157829381, "Kawasan 1 mengalami perubahan kemiringan"
+                    )
+
+                }
+
+                if (parameter.miring_x,parameter.miring_y <= 5) {
+                    bot.sendMessage(-1001157829381, "Kawasan 1 mengalami perubahan kemiringan"
+                    )
+
+                }
+                // bot.sendMessage(562592345, "setan"
+            }
+
+            if (parameter.node == 'Node-02') {
+                if (parameter.jarak >= 3) {
+                    bot.sendMessage(-1001157829381, "Kawasan 2 mengalami pergerakan tanah!"
+                    )
+                }
+
+                if (parameter.lembab >= 50) {
+                    bot.sendMessage(-1001157829381, "Kawasan 2 mengalami saturasi tinggi!"
+                    )
+
+                }
+
+                if (parameter.miring_x,parameter.miring_y >= 5) {
+                    bot.sendMessage(-1001157829381, "Kawasan 2 mengalami perubahan kemiringan"
+                    )
+
+                }
+
+                if (parameter.miring_x,parameter.miring_y <= 5) {
+                    bot.sendMessage(-1001157829381, "Kawasan 2 mengalami perubahan kemiringan"
+                    )
+
+                }
+                // bot.sendMessage(562592345, "setan"
+            }
+
+            if (parameter.node == 'Node-03') {
+                if (parameter.jarak >= 3) {
+                    bot.sendMessage(-1001157829381, "Kawasan 3 mengalami pergerakan tanah!"
+                    )
+                }
+
+                if (parameter.lembab >= 50) {
+                    bot.sendMessage(-1001157829381, "Kawasan 3 mengalami saturasi tinggi!"
+                    )
+
+                }
+
+                if (parameter.miring_x,parameter.miring_y >= 5) {
+                    bot.sendMessage(-1001157829381, "Kawasan 3 mengalami perubahan kemiringan"
+                    )
+
+                }
+
+                if (parameter.miring_x,parameter.miring_y <= 5) {
+                    bot.sendMessage(-1001157829381, "Kawasan 3 mengalami perubahan kemiringan"
+                    )
+
+                }
+                // bot.sendMessage(562592345, "setan"
+            }
+
+            if (parameter.node == 'Node-04') {
+                if (parameter.jarak >= 3) {
+                    bot.sendMessage(-1001157829381, "Kawasan 4 mengalami pergerakan tanah!"
+                    )
+                }
+
+                if (parameter.lembab >= 50) {
+                    bot.sendMessage(-1001157829381, "Kawasan 4 mengalami saturasi tinggi!"
+                    )
+
+                }
+
+                if (parameter.miring_x,parameter.miring_y >= 5) {
+                    bot.sendMessage(-1001157829381, "Kawasan 4 mengalami perubahan kemiringan"
+                    )
+
+                }
+
+                if (parameter.miring_x,parameter.miring_y <= 5) {
+                    bot.sendMessage(-1001157829381, "Kawasan 4 mengalami perubahan kemiringan"
+                    )
+
+                }
+                // bot.sendMessage(562592345, "setan"
             }
 
         }
