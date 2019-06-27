@@ -10,7 +10,7 @@ firebase_url = 'https://larys-project.firebaseio.com'
 
 
 # def ReadData(nama_port):
-ser = serial.Serial('COM4', 9600, timeout=100)
+ser = serial.Serial('COM5', 9600, timeout=100)
 while 1:
     try:
         # sensor value obtained from Arduino
