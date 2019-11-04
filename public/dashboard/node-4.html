@@ -12,8 +12,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.semanticui.min.css">
 
-
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -23,6 +21,9 @@
   <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
+  <link rel="shortcut icon" type="image/png" href="../img/common/icon.png">
+  <script src="https://kit.fontawesome.com/95505eef67.js" crossorigin="anonymous"></script>
+
   <title>Dashboard Data</title>
 
   <!-- Bootstrap core CSS -->
@@ -30,7 +31,7 @@
 
 </head>
 
-<body>
+<body class="dashboard">
 
   <div class="d-flex" id="wrapper">
 
@@ -62,7 +63,7 @@
               <a class="nav-link" href="../">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="../about.html">About</a>
             </li>
             <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -108,11 +109,6 @@
                   <canvas id="myChart-y"></canvas>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="chart">
-                  <canvas id="myChart-z"></canvas>
-                </div>
-              </div>
               <div class="col-12 table">
                 <table id="table" class="ui celled table" style="width:100%">
                   <thead>
@@ -123,7 +119,6 @@
                       <th>Lokasi</th>
                       <th>Kemiringan X (derajat)</th>
                       <th>Kemiringan Y (derajat)</th>
-                      <th>Kemiringan Z (derajat</th>
                       <th>Kelembapan (%)</th>
                       <th>Jarak</th>
                       <th>Getaran</th>
@@ -136,14 +131,32 @@
             </div>
           </div>
         </div>
-        <p>Muhammad Hamdan Latief
-          Universitas Telkom 2019</p>
       </div>
     </div>
     <!-- /#page-content-wrapper -->
 
   </div>
   <!-- /#wrapper -->
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <p class="project">Larys Project</p>
+          <p class="name">&copy; Muhammad Hamdan Latief 2019</p>
+        </div>
+        <div class="col-md-8">
+          <!-- <p class="nama">.latief</p> -->
+          <a href="https://github.com/azuluna" target="_blank"><i class="fab fa-github"></i> azuluna</a><br>
+          <a href="https://id.linkedin.com/in/mhamdanlatief" target="_blank"><i class="fab fa-linkedin-in"></i>
+            Muhammad Hamdan Latief</a><br>
+          <a href="https://www.youtube.com/channel/UCrC2FeBWIbak_-uJyXDHcZA/featured" target="_blank"><i
+              class="fab fa-youtube"></i>Muhammad Hamdan Latief</a><br>
+          <a href="https://azuluna.github.io/" target="_blank"><i class="fas fa-mouse-pointer"></i>azuluna.github.io</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="../vendor/jquery/jquery.min.js"></script>
