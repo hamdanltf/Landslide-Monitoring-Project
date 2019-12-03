@@ -115,7 +115,7 @@ void loop(){
         output_getar = "tidak-ada-getaran";
       }
   
-    Serial.println(x1 + String(" ") + y1 + String(" ") + z1 + String(" ") + output_tanah + String(" ") + output_getar + String(" ") + counter + String(" ") +  String("Node-01"));
+    Serial.println(x1 + String(" ") + y1 + String(" ") + output_tanah + String(" ") + output_getar + String(" ") + counter + String(" ") +  String("Node-01"));
     //  delay(5000);
     jeda2=jeda1;
     }
