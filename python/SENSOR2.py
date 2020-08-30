@@ -10,7 +10,7 @@ firebase_url = 'https://larys-project.firebaseio.com'
 
 
 # def ReadData(nama_port):
-ser = serial.Serial('COM5', 9600, timeout=100)
+ser = serial.Serial('COM6', 9600, timeout=100)
 while 1:
     try:
         # sensor value obtained from Arduino
@@ -21,7 +21,7 @@ while 1:
         time_hhmmss = time.strftime('%H:%M:%S')
         date_mmddyyyy = time.strftime('%d/%m/%Y')
 
-        print(sensorRead.decode("utf-8"))
+        print(sensorRead.decode("windows-1252"))
 
         waktu = {'date': date_mmddyyyy, 'time': time_hhmmss}
 
@@ -30,7 +30,7 @@ while 1:
 
         if (len(par) == 7):
             parameter = {
-                'miring_x': par[0], 'miring_y': par[1], 'miring_z': par[2],'lembab': par[3], 'getar': par[4], 'jarak': par[5],  'node': par[6]}
+                'miring_x': par[0], 'miring_y': par[1], 'miring_z': par[2], 'lembab': par[3], 'getar': par[4], 'jarak': par[5],  'node': par[6]}
 
             data = {'waktu': waktu, 'parameter': parameter}
             result = requests.post(
