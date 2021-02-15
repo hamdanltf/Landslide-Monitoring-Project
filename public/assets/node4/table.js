@@ -23,7 +23,7 @@ async function main() {
             const bodyTable = document.getElementById('bodyTable')
 
             const tr = document.createElement('tr')
-            const arr = [index, waktu.date, waktu.time, parameter.node, parameter.miring_x, parameter.miring_y, parameter.miring_z, parameter.lembab, parameter.jarak, parameter.getar]
+            const arr = [index, waktu.date, waktu.time, parameter.node, parameter.miring_x, parameter.miring_y, parameter.lembab, parameter.jarak, parameter.getar]
             const tds = []
 
             arr.map(a => {
@@ -60,7 +60,7 @@ async function main() {
         const bodyTable = document.getElementById('bodyTable')
 
         const tr = document.createElement('tr')
-        const arr = [index, waktu.date, waktu.time, parameter.node, parameter.miring_x, parameter.miring_y, parameter.miring_z, parameter.lembab, parameter.jarak, parameter.getar]
+        const arr = [index, waktu.date, waktu.time, parameter.node, parameter.miring_x, parameter.miring_y, parameter.lembab, parameter.jarak, parameter.getar]
         const tds = []
 
         arr.map(a => {
